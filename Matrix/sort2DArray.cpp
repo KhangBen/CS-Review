@@ -5,7 +5,7 @@ using namespace std;
 void sortRows(vector<vector<int>> &mat) {
   // going into each row
   for (auto &row : mat)
-    sort(row.begin(), row.end()); // sorting each row 
+    sort(row.begin(), row.end()); // sorting each row from lowest to high
 }
 
 
