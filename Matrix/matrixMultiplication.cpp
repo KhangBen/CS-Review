@@ -15,12 +15,15 @@ void multMatrix(int A[][C1], int B[][C2]) {
     for (int j = 0; j < C2; j++) {
       result[i][j] = 0; // setting values in result matrix to 0
 
-      for (int k = 0; k < )
+      for (int k = 0; k < R2; k++) {
+        result[i][j] += A[i][k] * B[k][i];
+      }
+
+      cout << result[i][j] << "\t"; 
     }
+
+    cout << endl;
   }
-
-
-
 }
 
 
